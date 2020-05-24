@@ -1,5 +1,10 @@
 def calculate_fuel(mass):
-    return mass//3-2
+    res = 0
+    while mass > 8:
+        mass = mass//3-2
+        res += mass
+    return res
+
 
 
 inp = ''
